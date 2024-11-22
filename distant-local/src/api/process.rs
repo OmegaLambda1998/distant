@@ -12,7 +12,7 @@ mod simple;
 pub use simple::*;
 
 mod wait;
-pub use wait::{ExitStatus, WaitRx, WaitTx};
+pub use wait::{ExitStatus, WaitRx};
 
 /// Alias to the return type of an async function (for use with traits)
 pub type FutureReturn<'a, T> = Pin<Box<dyn Future<Output = T> + Send + 'a>>;
